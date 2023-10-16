@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <details class="collapse">
+    <summary class="title">Lorem.</summary>
+    <div class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium voluptatibus odio
+      natus numquam provident aliquam vel iste quasi repellendus nisi vero delectus laboriosam, atque asperiores
+      sint
+      error repellat dolores unde.</div>
+  </details>
+
+  <details class="collapse">
+    <summary class="title">Lorem.</summary>
+    <div class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium voluptatibus odio
+      natus numquam provident aliquam vel iste quasi repellendus nisi vero delectus laboriosam, atque asperiores
+      sint
+      error repellat dolores unde.</div>
+  </details>
+
+  <details class="collapse">
+    <summary class="title">Lorem.</summary>
+    <div class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium voluptatibus odio
+      natus numquam provident aliquam vel iste quasi repellendus nisi vero delectus laboriosam, atque asperiores
+      sint
+      error repellat dolores unde.</div>
+  </details>
+
+  <details class="collapse">
+    <summary class="title">Lorem.</summary>
+    <div class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium voluptatibus odio
+      natus numquam provident aliquam vel iste quasi repellendus nisi vero delectus laboriosam, atque asperiores
+      sint
+      error repellat dolores unde.</div>
+  </details>
+
+  <script>
+    const collapseElements = document.querySelectorAll('.collapse');
+
+    collapseElements.forEach(collapse => {
+      collapse.addEventListener('click', () => {
+        collapseElements.forEach(collapseItem => {
+          if (collapseItem !== collapse) {
+            collapseItem.removeAttribute('open');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>

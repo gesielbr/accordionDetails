@@ -1,0 +1,54 @@
+@charset "UTF-8";
+details summary {
+  list-style: none;
+}
+
+.collapse {
+  border: solid 1px #fafafa;
+  border-radius: 4px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 300px;
+  transition: background-color 0.25;
+  will-change: background-color;
+}
+.collapse:first-child {
+  margin-top: 2rem;
+}
+.collapse:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.collapse:hover {
+  background-color: #f6f6f6;
+}
+.collapse:hover .title:after {
+  content: "🙂";
+}
+.collapse:hover[open] .title:after {
+  content: "😍";
+}
+.collapse[open] .title:after {
+  content: "😍";
+}
+
+.title {
+  cursor: pointer;
+  font-weight: 600;
+  padding: 1rem;
+  position: relative;
+}
+.title::after {
+  content: "😴";
+  position: absolute;
+  right: 1rem;
+  transform: translateY(-50%);
+  top: 50%;
+}
+
+.description {
+  border-top: #f1f1f1 solid 1px;
+  font-size: 0.75rem;
+  line-height: 2rem;
+  padding: 1rem;
+}/*# sourceMappingURL=style.css.map */
